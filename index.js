@@ -59,5 +59,5 @@ function placeOrder(cardNumber) {
   } else {
     
   }
-  cart = 0;
+  cart = [];
 }
