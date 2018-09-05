@@ -60,6 +60,6 @@ function placeOrder(cardNumber) {
     console.log("Sorry, we don't have a credit card on file for you.");
   }
   cart = [];
-  return `Your total cost is $${total(71)}, which will be charged to the card ${placeOrder(83296759)}.`;
+  return `Your total cost is $${total(71)}, which will be charged to the card $83296759.`;
   
 }
