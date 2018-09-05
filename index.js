@@ -59,7 +59,6 @@ function placeOrder(cardNumber) {
   } else {
     return "Sorry, we don't have a credit card on file for you.";
   }
-  cart = [];
   cart.pop({itemName: item, itemPrice: price});
   return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
 }
