@@ -56,10 +56,9 @@ function placeOrder(cardNumber) {
   // write your code here
   if (cardNumber){
     var t = total();
-    //cart = [];
+    cart = [];
     `Your total cost is $${t}, which will be charged to the card ${cardNumber}.`;
   } else {
-    cart = [];
     return "Sorry, we don't have a credit card on file for you.";
   }
   return `Your total cost is $${t}, which will be charged to the card ${cardNumber}.`;
