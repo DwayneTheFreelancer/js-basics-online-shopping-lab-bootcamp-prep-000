@@ -55,12 +55,24 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
   if (cardNumber == undefined){
-    var total = total();
-    cart = [];
+    //var total = total();
+    //cart = [];
     `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`;
   } else {
+    var total = total();
     cart.length = 0;
-    return "Sorry, we don't have a credit card on file for you.";
+    return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`;
+    //return "Sorry, we don't have a credit card on file for you.";
   }
-  return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`;
+
+}
+
+function placeOrder(cardNumber) {
+  if (cardNumber == undefined) {
+    console.log("We don't have a credit card on file for you to place your order.")
+  } else {
+      let t = total()
+      cart.length = 0
+      console.log(`Your total cost is $${t}, which will be charged to the card ${cardNumber}.`)
+  }
 }
